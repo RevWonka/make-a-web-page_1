@@ -1,0 +1,49 @@
+/* Here are the first few attempts at stylizing my page with CSS! The colors I just copy and pasted from Andy's page. */
+
+body {
+  background-color: white
+}
+h4{
+  text-align: center;
+  background-color: white;
+  color: #294860;
+  font-size: 400%;
+}
+h1{
+  text-align: left;
+  background-color: #294860;
+  color: white;
+  font-size: 200%;
+}
+/* It took me a while to figure out how to make the "L" in "Lesson" not squeeze so close to the edge of the box. And then I saw that Andy had the same problem and therefore set the h2 tags to have a margin buffer. */
+
+h2 {
+	margin: 10px;
+}
+
+.lesson{
+  background-color: #294860;
+  border-radius: 10px;
+	color: white; 
+	padding: 10px;
+	margin: 10px auto;
+}
+
+.concept{
+  background-color: #DFEAF1;
+	padding: 4px;
+	margin: 10px;
+	border-radius: 4px;
+	color: black;
+}
+
+h2{
+  background-color: #DFEAF1;
+  text-align: center;
+  color: #294860;
+  font-size: 125%;
+}
+ul{
+  text-align: left;
+  margin: 2px;
+}
