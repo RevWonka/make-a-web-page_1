@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Michael Moreno</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- so I have made the effort to indent my sections of code as I have realised it makes it much easier to locate specific areas of the code. That way corrections can be implimented faster.-->
+<title>Mike's Notes</title>
+	    <link rel="stylesheet" type="text/css" href="mike-style.css">
+<body>
+  <!--I wanted to put a div here to give me some more styling control over the h1 element, but then I recalled the ability to control the tag in CSS by just entering the tag. :-) -->
+    <h4>
+          Stage 1 Notes
+      <img src="http://www.udacity.com/cs253x/hipmunk.png" alt="hipmunk!">
+    </h4>
+  <div class="lesson">
+     <h1>
+         Lesson 1: Basics of the Internet
+     </h1>
+      <div class="concept" id="lesson-1-1">
+       <div class="concept-title">
+         <h2>
+         How the web works
+         </h2>
+       </div>
+        <p>
+          The internet breaks down into a few basic elements: HTML, URLs, HTTP, and Web Apps. The <em>World Wide Web</em>, as we know it, is a collection of <b>HTML</b> 
+          Documents. <b>HTML</b> 
+          stands for <b>H</b>yper <b>T</b>ext <b>M</b>arkup 
+          <b>L</b>anguage.Hyperlinks are also used to connect one web page to another. <a href="http://netforbeginners.about.com/od/h/f/What-Are-Hyperlinks.htm">Here</a> is a nice breakdown.
+          <br><br>
+          The major pieces of the Web are <b>You </b>(browser/comp) &lt;=&gt; 
+          <b>The Internet</b> (drawn as a <em>cloud</em> per industry standard) &lt;=&gt;<b>Servers</b> 
+          (Internet uses HTTP to talk to servers). 
+          <br>
+          <ul style="list-style-type:circle">
+          <li>
+            HTML files are the structure. Where the walls are in the house
+            </li>
+          <li>
+            CSS are the style of the site. Paint, rugs, curtains.
+            </li>
+           <li>
+             Java Script is how you change/interact with components. Remote, garage door opener.
+            </li>
+          </ul>
+        </p>
+      </div>
+      <div class="concept" id="lesson-1-2"> 
+        <div class="concept-title">
+         <h2>
+           The Parts of HTML
+          </h2>
+        </div>
+    <!--almost forgot the closing div tag here. Computers are stupid...-->
+        <ul>
+          <li>
+          Text content: what you see
+        </li>
+        <li>
+          Markup: describes the document
+        </li>
+        <li>
+          Reference to other     documents: images, videos.
+        </li>
+        <li>
+          Links to other pages: hyperlinks
+        </li>
+        </ul>
+    </div>
+    <div>
+      <div class="concept" id="lesson-1-3"> 
+        <div class="concept-title">
+          <h2>
+            The HTML Process
+          </h2>
+        </div>
+          <b>Plain Text:</b> 
+            you get what you type
+        <br>
+        <b>Markup:</b> make the text look different
+        <p>
+          Markup is made up of TAGs.<br><br>
+          <b>Opening tag</b> 
+          &lt;name&gt;   
+            <em>Contents</em>  
+            &lt;/name&gt; 
+              <b>Closing tag</b>
+          <br><br>
+              <b>*</b>if you do not close the tag, your opening tag attributes will continue
+              on.
+              <br>
+              &lt;name&gt; contents &lt;/name&gt; This whole unit is often referred to as an element.
+              <br><br>
+              Bold Tags &lt;b&gt; 
+            <b>contents</b> &lt;/b&gt; 
+            <br>
+          Emphasis Tags/Italics Tags (EM Tags) &lt;em&gt; 
+            <em>contents</em> 
+            &lt;/em&gt;
+        </p>
+         </div>
+        <div>
+          <div class="concept" id="lesson-1-4"> <div class="concept-title">
+          <h2>
+             HTML Attributes
+          </h2>
+            </div>
+           TAGs can have multiple attributes.
+           Attributes have a name (ATTR) and then = a “value”.
+           An example of a TAG which uses an attribute is the Anchor TAG.
+           Anchor TAGs are for making links.<br><br>
+           Anchor Tag: &lt;a "value" &gt; plain text contents &lt;/a &gt;
+          <br><br>
+          Example: &lt;a href(this is the attr. name) = “www.reddit.com” (this is the value) &gt; derp(this is the contents) &lt;/a&gt;
+          <br><br>
+          If you were to render this in HTML, you would just see the word <b>derp</b> and it would be a link to 
+          <a href="www.Reddit.com">www.Reddit.com</a>.
+        </div>
+      <div>
+        <div class="concept" id="lesson-1-5"><div class="concept-title">
+        <div>
+          <h2>
+            Image TAG
+          </h2>
+        <//div>
+          </div>
+          &lt;img&gt; is for images
+          <br>
+          &lt;img src=“url”  alt=“text”&gt;<br>
+        <p>
+          <b>src</b> is the source attribute. <b>“url"</b> is the location of the image to download.
+          <b>alt</b> is the attribute for alternate and the “text” that goes with it is the message that is displayed when the image does not load. It is also what is displayed for the blind. Nothing will 
+          <em>break</em>, but you should include alt=“text”  
+        </p>
+          <b>*</b>Image TAGs do not have a contents section and therefore no closing TAG.
+        <br><br>
+        <b>*</b>
+          These types of TAGs are called Void TAGs
+       </div>
+    </div>
+    <div>
+      <div class="concept" id="lesson-1-6"> 
+        <div class="concept-title">
+         <div>
+          <h2>
+              Whitespace
+          </h2>
+         </div>
+      </div>
+        Writing in HTML will deliver all text in the same line without any spaces between lines of text. 
+        To create space you should use the break TAG < br >. 
+        < br > is a void TAG (no closing TAG).
+        Use < br > after text where you want a break.
+        <br>
+          <p>
+            <strong>
+              Break Example:
+            </strong>
+          </p>
+
+        1 This text is really<br>
+        2 < br > <br>
+        3 < br > <br>
+        4 too long for one line.
+        <br><br>
+          Another way of doing line breaks is to use the Paragraph TAG.
+          &lt;p&gt; 
+        The &lt;p&gt; uses content and a closing TAG. &lt;p&gt; 
+          <em>content</em> 
+          &lt;/p&gt;
+          <br>
+          <b>*</b>
+            The &lt;p&gt; TAG will create an <b>invisible box</b> around the content. 
+          <div>
+            <b>
+              Inline/Block
+            </b>
+          </div>
+        &lt;br&gt; TAGs are inline TAGs. They make text wrap to the next line.
+      <br>
+      &lt;p&gt; TAGs are Block TAGs and they put the text in an invisible box which has hieght and width, and will give space between the content in the &lt;p&gt; TAG and the rest of the text.
+        <div>
+          <b>Span/Div</b>
+        </div>
+          &lt;span&gt; <em>content</em> &lt;/span&gt; is <b>Inline</b>.
+          <br>
+          &lt;div&gt; <em>content</em> &lt;/div&gt; is <b>Block</b>.
+          <br><br>
+          These elements only contain their content. There is a way to attach styles to them to adjust the behaviors of how they display.
+          <br><br>
+        <b>Example:</b> you could use a CSS class to adjust either.
+        <br>
+        &lt;span class=“foo”&gt; content &lt;/span&gt;
+        <br>
+          <div>
+            <strong>Side examples:</strong>
+          </div> &lt;strong&gt; <b>Bolds Content</b> &lt;/strong&gt;   <b>Inline</b> TAGs
+          <br>
+        &lt;form&gt; Moves content to a new line and creates space at the bottom &lt;/form&gt;
+        <b>
+          Block
+          </b>  
+          TAGs
+          </div>
+        </div>
+    <div>
+      <div class="concept" id="lesson-1-7">
+        <div class="concept-title">
+      <p>
+        <h2>
+          HTML Documents
+        </h2>
+      </p>
+      </div>
+        This is an example of what a full 
+      <a href="https://www.youtube.com/watch?v=mzPxo7Y6JyAHTML">HTML 5</a>
+
+      document would look like.
+      <br><br>
+      <b>
+        &lt;!DOCTYPE HTML&gt;
+      </b> 
+        This is the doctype that states what language we are using. 
+        <br>
+      <b>&lt;html&gt;</b>  The open TAG of the whole HTML document.
+        <br>
+      <b>&lt;head&gt;</b> Open TAG of the header of the doc.
+        <br>
+        <b>&lt;title&gt; Title! &lt; /title&gt;</b> This is your title of the page.
+        <br>
+      <b>&lt;/head&gt;</b> Closing header TAG. the head contains meta-data. CSS/JAVA SCRIPT.
+        <br>
+        <b>&lt;body&gt;</b> Opening body of the document TAG
+        <br>
+          <b>&lt;b&gt; <em>content</em> &lt;b&gt;
+         </b> The content of the doc.
+        <br>
+            <b>&lt;/body&gt;</b> 
+              Closing body TAG.
+            <br>
+              <b>&lt;/html&gt;</b> 
+                This closes the HTML document. 
+            <p> 
+              There are rules for how websites behave. There are also many tools to help you build.
+
+              You can use Google Chrome and it’s Developer Tools to look at the Document Object Model (DOM) of the web page -a standard convention r representing and interacting wit elements in HTML.
+          <br><br>
+            How does the browser know what type to apply and where that style comes from?
+        <br><br>
+            HTML uses tags. The browser uses HTML tags and turns them into elements in the tree represented in the DOM. 
+        </p>
+        <p>
+          <b>*</b>The elements are created from the starting tag to the ending tag, in between is content.This content can be empty, text, or another element. 
+        </p>
+        <p>
+          Each tag has a type which defines what kind of element can be created. A paragraph, Imag, or a document division (block)
+
+          Each tag can also have an attribute (attr) with values. 
+
+      <br><br>
+      &lt;h1&gt; (this is the tag) class (this is the attr) = “article” (this is the value) &lt;/h1&gt;
+      <br><br>
+      This element defines the structure and content of the page. How the page is built.</p>
+    </div>
+  </div>
+ </div>            
+<!-- so somewhere in here I am missing a /div, or I added to many. I would like to break up the "lesson" div the way Andy did to create some whitespace between the lessons. I have tried tacking the div tags through Sublime text, and had some help from Randy in the forums, but I still can seem to close the righ tag.--> 
+   <div class="lesson">
+          <h1>
+            Lesson 2: Creating a Structured Document with HTML
+          </h1>
+      <div>
+        <div class="concept" id="lesson-2-1"> <div class="concept-title">
+            <h2>
+              How websites work. 
+            </h2>
+          </div>
+          If we think about builing a website like buiding a house then...
+          <ul>
+            <li>
+            HTML files are the structure. Where the walls are in the house.
+          </li>
+          <li>
+            CSS are the style of the site. Paint, rugs, curtains.
+          </li>
+            <li>
+              Java Script is how you change/interact with components. Remote, garage door opener
+            </li>
+            <ul>
+            There are rules for how websites behave. There are also many tools to help you build. You can use Google Chrome and it’s Developer Tools to look at the Document Object Model <b>(DOM)</b> of the web page. A standard convention r representing and interacting wit elements in HTML.
+        </div>
+        <div class="concept" id="lesson-2-2"> <div class="concept-title">
+          <h2>
+            Boxes, Boxes, Everywhere.
+          </h2>
+          </div>
+          <p>
+          All the elements in the Wiki example were inside boxes. How? <br><br>
+
+          IF you have a circle on a page, and you inspect the element you can see that the div has the circle in a box. But where does the circle come from.? CSS. In the style section you can see the options for style changes. 
+         <br><br>
+        In the shapes demo, we played with the style by unchecking the border radius element and the circle turned into a square - because the border went away and the color now filled the box.
+         <br><br>
+        In the sample webpage we were asked to look at how we can break up the design into boxes to allow us the ability to create that space in HTML. 
+       <br><br>
+          Using a pencil is a huge help when starting out and working with a new design. Starting with big and then moving to small is also helpful. work with the big elements ( whole page, header, body, footer) and then move to smaller elements (titles, text, images) 
+           <br><br>
+            When you create boxes using div tags, you can label them with class names. 
+           <br><br>
+        <b>*</b>With Reflection and Practice I will be able to think like an expert and act like an expert.
+            </p>
+        </div>
+      <div class="concept" id="lesson-2-3"> 
+          <div class="concept-title">
+          <h2>
+           Style
+          </h2>
+         </div>
+
+          CSS allows you to use a specific syntax and rules to change how elements look on the page. size of font, color of background, etc.
+
+          You can use CSS to say that all h1 elements that belong to the class “article” should have the font color of blue.
+
+          &lt;h1&gt; (this is the tag) class (this is the attr) = “article” (this is the value) 
+          &lt;/h1&gt;
+        </p> 
+            To tie structure and style together the HTML doc can provide the browser with information on what style to use and where to get it.
+
+            Since there are rules on how this works, you can use the language (HTML) to can look at the code and get an understanding of how the page is organized and how it will look.
+      </div>
+    </div>
+<!--I'm having the same problem seperating the lessons. -->
+    <div class="lesson">
+      <h1> 
+        Lesson 3: Working with CSS
+      </h1>
+      <div class="concept" id="lesson-2-4"> 
+        <div class="concept-title">
+        <h2> 
+          CSS 
+        </h2>
+      </div>
+        <b>*</b>Avoid repetition. This is a key to using CSS and a fundamental to programming.
+          <div>
+            CSS stands for Cascading Style Sheets. It is this Cascading effect that gives CSS it's power to streamline your work.
+           <br><br>
+              If you want to write CSS that makes all h1 elements have a black background and white text, you would write:
+                <p>
+                h1 {
+                background-color : black;
+                color: white;
+                   }
+                </p>
+            In this example, the h1 is a selector. It says to the browser "I want you to apply the rules I'm about to tell you to every h1 element."
+
+            After the h1 there is a left curly brace { and at the bottom there is a matching right curly brace }. Everything between these curly braces will be interpreted as a "rule" that should be applied to every h1 element.
+
+            The line of code that says background-color : black; is a declaration.background-color is a property and black is the value of that property.
+            </div>
+          <p>
+            <b>Class selectors</b>
+            allow you to add style to certain elements. (only certain h1 tags, for instance)
+            <br><br>
+            You add class selectors by writing something like this:
+          <div>
+            <ul>
+              <li>
+              < div class ="stop" >< /div >
+            </li>
+            <li>
+              < div class="slow" >< /div >
+            </li>
+            <li>
+              < div class="go" >< /div >
+            </li>
+           </ul>
+          </div>
+              Then you can effect those classes you have created in CSS by writing them a 
+              <b>
+                .class-name
+              </b>
+              , like below:
+              <ul>
+                <li>
+                .stop {
+                background-color: red;
+                }
+              </li>
+              <li>
+                .slow {
+                background-color: yellow;
+                }
+              </li>
+              <li>
+                .go {
+                background-color: green;
+                }
+              </li>
+              </ul>
+              <b>*</b>
+              Rules can be applied to all divs or just certain divs by using the appropriate selector.
+          </div>
+        </div>
+        <div class="concept" id="lesson-2-5"> <div class="concept-title">
+          <h2> 
+            The Box Model 
+          </h2>
+          </div>
+          <p>
+            Understanding the box model that containers (div/span) create means that you can shape the space that your content inhabits and how it looks in that space. 
+            <br><br>
+            Each container will have the content, then padding for the content, then a border, and then a margin around the outside that seperates that container from other containers.
+            <br><br>
+            In more detail, 
+            <b>padding</b>
+            clears and area around the content and is affected by the background color. It is the space inside of the box that protects the content directly. The
+            <b>border</b>goes around the padding. it is inherited from the color property of the box. The
+            <b>margin</b> is the space between boxes. It has no background color and is transparent.  You can set the size of the box by pixels or percentage. Pixels will not change based on the size of the screen and this could effect user experience.
+            <b>*</b>This is especially true for mobile apps.
+            You can also set a max width. 
+            <br><br>
+            <b>*</b>It’s important to know that the actual content witdth involves the content, border and padding widths.
+          </p>
+          <p>
+            This is how you effect box sizes in CSS
+            <br><br>
+            *{
+              box-sizing: border-box;
+             } 
+            <br><br>
+            Older browsers need browser specific prefixes to display. 
+
+          <ul>
+            <li>
+            webkit-box-sizing: border-box;
+          </li>
+          <li>
+            moz-box-sizing: border-box;
+          </li>
+          <li>
+            ms-box-sizing: border-box;
+            </li>
+          </ul>
+          </p>
+            <div>
+              <b>Flex Box Layout:</b>
+            An efficient way to layout a line or elements in a container.
+              <br><br>
+              If you want several elements to be next to each other, you can change the display attr. of the parent container to value x. 
+              <br><br>
+              Ex: < div class=“app” style”
+              		display: flex; 
+              	“ >
+            <br><br>
+              This makes all divs in the class of app fall in line with each other. (For it to work, you also have to give the elements a size smaller than the default 100%. Otherwise there is not enough room. This is when you would use the border sizing.) Here is a link to an
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">online guide.
+              </a>
+            </div>
+          </div>
+          <div class="concept" id="lesson-2-5"> 
+            <div class="concept-title">
+            <h2>
+              The Coding Process
+            </h2>
+            </div>
+            <div>
+              The process is 
+              <b>Code - Test - Refine.</b>
+            <ol>
+              <li>
+                First get the structure of the page right by visually boxifying it.
+              </li>
+
+            <li>
+              Then work on the tags. Then size of boxes and how to position them.
+              </li>
+
+            <li>
+              When layout is complete, you can work on smaller details.
+              </li>
+            </ol>
+
+            Using the Inspect Element and using Dev tools options is very useful during the test phase. 
+
+            You can also check your HTML or CSS code online to make sure it meets all standards.
+            </div>
+         </div>
+  </body>
+</html>
+
+</body>
+
+</html>
